@@ -1,40 +1,74 @@
-# Data Cleaning
+# Customer Segmentation
+
+## OASIS INFOBYTE Data Analytics Internship
+
+### Level 1 - Task 2
 
 ## Objective
-The objective of this project is to clean and prepare a dataset for
-further analysis by identifying and handling common data quality issues.
+
+The objective of this project is to segment customers based on their
+purchasing behaviour using RFM analysis and K-Means clustering.
 
 ## Dataset
-The project uses a dataset that contains raw data requiring preprocessing
-and cleaning before analysis.
+
+The project uses the Online Retail Dataset obtained from Kaggle.
+The dataset contains transaction details such as invoice number,
+product information, quantity, price, customer ID, date and country.
 
 ## Tools Used
+
 - Python
 - Pandas
 - NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 - Google Colab
 
-## Data Cleaning Steps
-- Loaded the dataset
-- Examined the dataset structure
-- Checked for missing values
-- Identified duplicate records
-- Handled missing and inconsistent data
-- Removed unnecessary data where required
-- Checked data types
-- Prepared the final cleaned dataset
+## Data Preprocessing
 
-## Cleaned Dataset
-The cleaned dataset is included in this repository as:
+- Loaded the Online Retail dataset
+- Checked the dataset structure
+- Handled missing Customer IDs
+- Removed cancelled transactions
+- Removed invalid quantity and price values
+- Removed duplicate records
+- Calculated total transaction amount
 
-`cleaned_data.csv`
+## RFM Analysis
+
+Customer behaviour was analyzed using three RFM features:
+
+- Recency - How recently a customer made a purchase
+- Frequency - How often a customer made purchases
+- Monetary - How much a customer spent
+
+## Customer Segmentation
+
+K-Means clustering was applied to the RFM features to divide customers
+into different groups based on their purchasing behaviour.
+
+The Elbow Method was used to help determine the appropriate number
+of clusters.
+
+## Visualizations
+
+The project includes visualizations for:
+
+- Elbow Method
+- Customer clusters
+- RFM analysis
+- Customer behaviour
 
 ## Results
-The dataset was successfully cleaned and prepared for further analysis.
-The cleaning process improved the quality and consistency of the data.
+
+The clustering analysis identified different customer groups based on
+their purchasing patterns. These segments can help businesses
+understand customer behaviour and develop targeted marketing strategies.
 
 ## Conclusion
-This project provided practical experience in data preprocessing and
-cleaning using Python and Pandas. Clean and consistent data is important
-for obtaining reliable results from data analysis.
 
+Customer segmentation using RFM analysis and K-Means clustering provides
+useful insights into customer purchasing behaviour. The identified
+customer groups can be used to improve customer targeting, marketing
+strategies and customer relationship management.
